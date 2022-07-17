@@ -1,0 +1,54 @@
+@media screen and (max-width: 768px) {
+    .player-container,
+    .blog-container,
+    .courses-container {
+        grid-template-columns: 1fr;
+    }
+    .blog-img img {
+        max-width: 150px;
+    }
+    .course-img img {
+        width: 100%;
+    }
+    .container {
+        margin: 40px 15px;
+    }
+    .menu-icon {
+        display: inline-block;
+    }
+    .nav-container {
+        padding: 0 20px;
+        align-items: center;
+    }
+    .nav-right {
+        display: none;
+        transition: 0.5s;
+    }
+    .show {
+        display: flex;
+        flex-direction: column;
+        transition: 1s;
+    }
+    .show .menu {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        background: #562eff;
+        padding: 20px;
+        text-align: center;
+        left: 0;
+        top: 69px;
+        width: 100vw;
+        z-index: 2;
+        transition: 1s;
+    }
+}
+
+@media screen and (min-width: 769px) and (max-width: 800px) {
+    .container {
+        margin: 40px 15px;
+    }
+    .courses-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
