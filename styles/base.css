@@ -3,6 +3,10 @@
     src: url(../webFonts/Fontspring-DEMO-ceraroundpro-medium.otf);
 }
 
+p {
+    line-height: 30px;
+}
+
 * {
     padding: 0;
     margin: 0;
@@ -15,8 +19,8 @@
 :root {
     --background: #e5e5e5;
     --foreGround: #fff;
-    --primary: #562eff;
-    --aoutherName: #ed6b4f;
+    --primary: #fa6957;
+    --aoutherName: #707cf9;
     --durationBg: #fee5df;
     --text-color: #183153;
 }
@@ -48,6 +52,7 @@ body {
     font-weight: 700;
     font-size: 24px;
     margin-top: 20px;
+    text-transform: capitalize;
 }
 
 
@@ -60,6 +65,7 @@ nav {
     position: fixed;
     width: 100%;
     top: 0;
+    z-index: 9;
 }
 
 .nav-container {
@@ -135,7 +141,8 @@ nav img {
     transition: 0.4s;
 }
 
-.player:hover {
+.player:hover,
+.card:hover {
     box-shadow: 7px 7px 10px #c1c1c160, -7px -7px 10px #ffffff56;
 }
 
@@ -250,4 +257,143 @@ nav img {
 
 .rating-in-number {
     margin-left: 10px;
+}
+
+
+/* instructor */
+
+.card-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.top-part {
+    display: flex;
+    justify-content: flex-start;
+    gap: 15px;
+}
+
+.top-part img {
+    width: 65px;
+    height: 65px;
+}
+
+.card,
+.test-card {
+    padding: 20px;
+    margin: 15px;
+    border: 1px solid var(--background);
+    border-radius: 8px;
+    transition: 0.4s;
+}
+
+.icon-holder {
+    max-width: 40%;
+    padding: 5px 10px;
+    border-radius: 55px;
+    box-shadow: 7px 7px 10px #c1c1c160, 7px 7px 10px #ffffff56;
+    margin-top: 30px;
+    border: 1px solid #fa6a575b;
+}
+
+.icon-holder i,
+.ins-info>i {
+    font-size: 20px;
+    color: var(--primary);
+    margin: 5px;
+}
+
+.ins-info h2 {
+    color: var(--text-color);
+    font-size: 20px;
+    font-weight: normal;
+}
+
+.ins-info p {
+    font-size: 14px;
+    color: var(--primary);
+    font-weight: 300;
+}
+
+
+/* testimonial */
+
+.test-card-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.lg {
+    font-size: 30px;
+}
+
+.test-card {
+    position: relative;
+}
+
+.user-img {
+    width: 60px;
+    height: 60px;
+    padding: 5px;
+    border: 2px dashed var(--primary);
+    border-radius: 50%;
+}
+
+.upper-part p {
+    margin-bottom: 20px;
+}
+
+.bottom-part {
+    margin-top: 20px;
+    display: flex;
+    justify-content: flex-start;
+    gap: 15px;
+}
+
+.test-card i {
+    font-size: 80px;
+    color: var(--primary);
+    opacity: 0.7;
+    margin: 15px 0;
+}
+
+.text h3 {
+    font-size: 22px;
+    font-weight: normal;
+    color: var(--text-color);
+}
+
+.text p {
+    color: var(--primary);
+    font-size: 14px;
+}
+
+footer {
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    background: var(--primary);
+    text-align: center;
+    padding: 30px 0;
+    color: var(--foreGround);
+}
+
+footer p {
+    font-size: 18px;
+    font-weight: normal;
+    margin-bottom: 20px;
+}
+
+footer a {
+    color: var(--foreGround);
+}
+
+footer i {
+    font-size: 25px;
+    margin: 5px;
+}
+
+.underline {
+    padding-bottom: 4px;
+    border-bottom: 1px solid #fff;
 }
