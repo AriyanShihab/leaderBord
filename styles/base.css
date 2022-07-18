@@ -3,6 +3,11 @@
     src: url(../webFonts/Fontspring-DEMO-ceraroundpro-medium.otf);
 }
 
+html {
+    scroll-behavior: smooth;
+    scroll-padding: 100px;
+}
+
 p {
     line-height: 30px;
 }
@@ -94,7 +99,7 @@ nav {
     gap: 10px;
 }
 
-.menu li {
+.menu li a {
     color: var(--foreGround);
     font-size: 18px;
     margin: 8px;
